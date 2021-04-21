@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>兴安岭猎人传说</title>
+    <link rel="stylesheet" href="Home_page.css " type="text/css">
+</head>
+
+<body>
+<!--导航栏-->
+<div id="nav">
+    <ul id="nav_ul">
+        <li>
+            <a href="#">影片简介</a>
+            <ul id="li_nav">
+                <li id="nav_li1"><a href="#Videohighlights" style="font-family:'华文新魏';">影片精彩片段</a></li>
+                <li><a href="#" style="font-family:'华文新魏';">关于我们</a></li>
+            </ul>
+        </li>
+        <li><a href="#">关于我们 </a></li>
+        <li><a href="#">联系方式 </a></li>
+    </ul>
+</div>
+
+<!--简要信息-->
+<div id=Introduction"">
+    <div>
+         <h1 id="Introduction_h1">兴安岭猎人传说</h1>
+        <audio src="" autoplay="autoplay">
+            <img src="../images/音乐.png" alt="">
+        </audio>
+
+    </div>
+
+    <form action="#" id="info">
+       <fieldset>
+           <legend>相关信息</legend>
+           <table rules="rows">
+               <tr>
+                   <td>中文名称</td>
+                   <td width="20px"></td>
+                   <td><a href="https://v.qq.com/x/cover/mzc00200mv2vcc5.html" id="info_a" target="_self">《兴安岭猎人传说》</a></td>
+                   <td width="40px"></td>
+                   <td>制片人</td>
+                   <td width="20px"></td>
+                   <td>马烨</td>
+               </tr>
+               <tr >
+                   <td>类型</td>
+                   <td width="20px"></td>
+                   <td>惊悚片|恐怖片</td>
+                   <td width="40px"></td>
+                   <td>主演</td>
+                   <td width="20px"></td>
+                   <td>尚铁龙、林枫烨</td>
+               </tr>
+               <tr>
+                   <td>总时长</td>
+                   <td width="20px"></td>
+                   <td>83分钟</td>
+                   <td width="40px"></td>
+                   <td>导演</td>
+                   <td width="20px"></td>
+                   <td>刘轩狄</td>
+               </tr>
+           </table>
+       </fieldset>
+    </form>
+</div>
+<br>
+<!--海报-->
+<div>
+    <img src="../image/logo.webp" style="width: 300px ; height: 533.5px" >
+    <img src="../image/logo2.webp" style="width: 300px ; height: 533.5px" id="haibao">
+    <img src="../image/logo3.webp" style="width: 300px ; height: 533.5px">
+</div>
+<!-- 精彩瞬间展示（图片）-->
+
+<div class="img"  >
+    <fieldset id="Snippet">
+        <legend>精彩片段图片</legend>
+        <img id="img_img1" src="../image/1.png"><br>
+        <div id="简介">
+            故事讲述了：东北民间流传着关于“皇围猎人”的神秘传说，他们世代生存于深山，为帝王守护兴安岭这片龙兴之地的气脉运转。
+            传闻猎人除了精通狩猎之法，更知晓驱鬼通神之术。在东北一处偏僻的山村里，悄然发生一起灭门惨案，在村民们的恳求下，最后一代皇围猎人刘二爷决定出山调查真相，不想过程中怪事屡现，老林子里的秘密也被渐渐揭开。
+        </div>
+        <button id="btn"> 下一张</button>
+    </fieldset>
+</div>
+
+<!--影片精彩片段-->
+<div>
+    <fieldset>
+        <legend id="Videohighlights">影片精彩片段</legend>
+        <video width="1519.2px" height="600px" controls>
+            <source src=".idea/video/1.mp4" type="video/mp4">
+        </video>
+    </fieldset>
+</div>
+
+</body>
+<script>
+    window.onload = function () {
+        var imgarr = ["../image/1.png" , "../image/2.png" , "../image/3.png"];
+        var btn = document.getElementById("btn");
+        var img = document.getElementById("img_img1");
+        var index = 0 ;
+        btn.onclick = function () {
+                index++;
+                if (index == imgarr.length){
+                    index = 0;
+                }
+                img.src = imgarr[index];
+        }
+    }
+</script>
+</html>
