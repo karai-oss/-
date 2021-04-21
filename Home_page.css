@@ -1,0 +1,106 @@
+/*主题样式*/
+*{
+    padding: 0;
+    margin: auto 0px;
+}
+
+/*导航栏样式*/
+#nav{
+    heigth : 200px;
+}
+ul{
+    height: 51px;
+    background-color: black;
+    /*background-image: url("images/1.png");*/
+}
+li{
+    margin-top: 16.2px;
+    margin-left:336px;
+    float: left;
+    display: block;
+    list-style-type: none;
+}
+#nav_ul a{
+    background-color: black;
+    color: white;
+    text-decoration: none;
+}
+#nav_ul a:hover{
+    display: block;
+    background-color:skyblue;
+    border: 1px solid white;
+}
+ul li ul li {
+    margin-top: 2px;
+    float:none;
+    background-color:black;
+}
+ul li{
+    text-align:center;
+}
+ul li ul{
+
+    width: 64px;
+    display: none;
+}
+ul li:hover ul{
+    position: absolute;
+    display: block;
+}
+#li_nav li{
+   margin-left: 0px;
+}
+
+/*Introduction样式*/
+#Introduction_h1{
+    text-align: center;
+    text-shadow: 5px 3px 2px gray;
+}
+
+/*表格样式*/
+table{
+    margin-left:560px ;
+    font-family: Arial ;
+    font-weight: 3;
+}
+#info_a{
+    text-decoration: none;
+    color: black;
+}
+
+/*精彩片段图片样式*/
+img{
+    width: 759.6px; /*759.6*/
+    height: 200px;
+   /* margin:0 279.6px;*/
+}
+button{
+    margin-left: 346.4px;
+}
+#Snippet{
+    border: 1px dotted ;
+}
+#简介{
+    text-indent: 30px;
+    margin-top:-200px;
+    width: 749.6px;
+    float: right;
+}
+
+/*海报*/
+#haibao{
+    margin-right: 304px;
+    margin-left: 304px;
+}
+
+h1 + img{
+    width: 20px;
+    height: 20px;
+    float: right;
+}
+
+
+
+
+
+
